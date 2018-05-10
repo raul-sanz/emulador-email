@@ -98,22 +98,12 @@ function validarEmail(campo){
     const mensaje = campo.value;
     if (mensaje.indexOf('@') !== -1){
         campo.style.borderBottomColor = 'green';
-        campo.classList.remove('error');
-
-            /* const errosCorregido = document.getElementsByClassName('mensaje-error');
-            errosCorregido.remove(); */
+        campo.classList.remove('error'); 
                     
     }else{
       
                  campo.style.borderBottomColor = 'red';
                  campo.classList.add('error');
-                 /* if(campo.className === 'error'){
-                     console.log('todo bien');
-                    const errors = document.createElement('p');
-                    errors.classList.add('mensaje-error');
-                     errors.innerText='porfavor valida tu Email';
-                     console.log(errors);
-                    errorValidacion.appendChild(errors); 
-                 } */
+                
     }
 }
